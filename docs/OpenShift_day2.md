@@ -1,0 +1,74 @@
+# Day 2 Tasks for OpenShift
+
+## Current OpenShift Cluster
+
+- OCP Version
+
+### Walkthruough of Current Architecture and Install Process
+
+- Hypervisor if Virtual Machines
+- Installation Method (IPI or UPI)
+- Storage Classes
+    - RWX
+    - RWO
+    - ObjectStorage
+- Ingress Load Balancer Type? Depends on Installation Method
+- DHCP or DHCP Reservations for control plane and worker nodes
+- [Local Image Repository Status](https://pages.github.ibm.com/skol/pe-bootcamp/ocp-on-vmware/config-image-registry/)
+- [Updating IBM Software Entitlement Key](https://myibm.ibm.com/products-services/containerlibrary)
+- [Redhat Pull Secret](https://console.redhat.com/openshift/install/pull-secret) 
+
+### Overview of Cores and Cluster Management
+
+- 
+- Advanced Cluster Manager ??
+    - Aids in managing multiple clusters.
+    - Learning Curve is pretty high, but long run may be worth it to start early
+
+### Best Practices OCP Sizing
+
+- [Maximo Sizing Calculator](https://www.ibm.com/docs/en/masv-and-l/continuous-delivery?topic=premises-requirements-capacity-planning)
+- [Sizing Guidance](https://ibm-mas.github.io/mas-performance/mas/sizing/guidance/#sizing-guidance)
+
+**Note:** The sizing calculator is a zip file that contains a Microsoft Excel spreadsheet that can be completed for sizing recommendations.
+
+### Node Management in OpenShift
+
+#### Master Node Replacement
+
+- [Rebuild Master Node](https://myopenshiftblog.com/rebuilding-master-node/)
+    - [Backup and Restore of ETCD/Cluster State](https://myopenshiftblog.com/backup-and-restore-of-etcd-cluster-state/)
+
+#### Worker Node Addition
+
+- [Adding more worker nodes to an existing cluster](https://myopenshiftblog.com/rebuilding-adding-worker-nodes/)
+
+### Identity Providers for OpenShift
+
+- [Authentication Providers with AD](https://rhthsa.github.io/openshift-demo/infrastructure-authentication-providers.html)
+- [Adding Active Directory OAUTH Provider](https://myopenshiftblog.com/adding-active-directory-oauth-provider/)
+- [configuring Active Directory in RHOS](https://myopenshiftblog.com/adding-active-directory-oauth-provider/)
+- [HTPassword Identity Provider](https://pages.github.ibm.com/skol/pe-bootcamp/ocp-on-vmware/config-identity-provider/)
+
+### Adding Roles and Olee Bindings for Users
+
+[Authentication and authorization](https://docs.redhat.com/en/documentation/openshift_container_platform/4.18/html-single/authentication_and_authorization/index)
+
+### Monitoring and Alerting
+
+- [Observability Overview](https://docs.redhat.com/en/documentation/openshift_container_platform/4.18/html-single/observability_overview/index)
+- Get a health check of our current clusters, and setup, to determine action items
+    - [Gathering Baseline Openshift Usage Information from Metrics](https://myopenshiftblog.com/gathering-baseline-openshift-usage-information-from-metrics/)
+    - [Openshift Monitoring, Logging, Observability, and Troubleshooting (Part 1)](https://myopenshiftblog.com/openshift-observability/)
+
+### Content Creators For Some Links
+
+# [Keith Calligan - Red Hat - Senior Solutions Architect](https://myopenshiftblog.com/about-2-2-2-2-2-3/)
+
+### Additional Links
+
+- [Red Hat Developer e-books](https://developers.redhat.com/e-books)
+- [Ask an OpenShift Admin (Ep 26): Day 2 Operations, part 1](https://www.youtube.com/watch?v=AM9mggoOu_E)
+- [Ask an OpenShift Admin (Ep 26): Day 2 Operations, part 2](https://www.youtube.com/watch?v=k0vZQHWwxe8)
+- [Understanding the OCP Install Process (Part 1)](https://myopenshiftblog.com/understanding-the-ocp-install-processes-part-1/)
+- [Understanding the OCP Install Process (Part 2)](https://myopenshiftblog.com/understanding-the-ocp-install-processes-part-2/)
