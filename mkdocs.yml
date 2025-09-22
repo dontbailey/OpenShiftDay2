@@ -1,4 +1,4 @@
-site_name: OpenShift Day2
+site_name: Red Hat OpenShift Day 2
 site_url: https://github.com/OpenShiftDay2
 edit_uri: ""
 site_author: Don Bailey
@@ -9,6 +9,8 @@ repo_name: dontbailey/OpenShiftDay2
 repo_url: https://github.com/dontbailey/OpenShiftDay2
 
 nav:
+  - Index:
+      - index.md
   - OpenShift_day2.md
 theme:
   name: material

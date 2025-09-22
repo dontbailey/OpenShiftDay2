@@ -34,8 +34,8 @@ hide:
 - DHCP or DHCP Reservations for control plane and worker nodes
 - [IBM Software Entitlement Key](https://myibm.ibm.com/products-services/containerlibrary)
 - [Redhat Pull Secret](https://console.redhat.com/openshift/install/pull-secret) 
-- [Local Image Repository Status](./config-image-registry.md)
-- [Update Global Pull Secret](./update-global-pull-secret.md)
+- [Local Image Repository Status](./config-image-registry.md){target="_blank"}
+- [Update Global Pull Secret](./update-global-pull-secret.md){target="_blank"}
 
 ### Overview of Cores and Cluster Management
 
@@ -55,7 +55,7 @@ hide:
 #### Master Node Replacement
 
 - [Rebuild Master Node](https://myopenshiftblog.com/rebuilding-master-node/)
-    - [Backup and Restore of ETCD/Cluster State](https://myopenshiftblog.com/backup-and-restore-of-etcd-cluster-state/)
+- [Backup and Restore of ETCD/Cluster State](https://myopenshiftblog.com/backup-and-restore-of-etcd-cluster-state/)
 
 #### Worker Node Addition
 
@@ -67,6 +67,7 @@ hide:
 - [Authentication Providers with AD](https://rhthsa.github.io/openshift-demo/infrastructure-authentication-providers.html)
 - [Adding Active Directory OAUTH Provider](https://myopenshiftblog.com/adding-active-directory-oauth-provider/)
 - [configuring Active Directory in RHOS](https://myopenshiftblog.com/adding-active-directory-oauth-provider/)
+- [Authentication Providers with AD](https://rhthsa.github.io/openshift-demo/infrastructure-authentication-providers.html)
 
 ### Adding Roles and Olee Bindings for Users
 
