@@ -1,7 +1,7 @@
 site_name: OpenShift Day2
-site_url: https://github.com/dontbailey/OpenShiftDay2
+site_url: https://github.com/OpenShiftDay2
 edit_uri: ""
-site_author: Linux Learning Group
+site_author: Don Bailey
 
 # Repository
 
@@ -9,8 +9,7 @@ repo_name: dontbailey/OpenShiftDay2
 repo_url: https://github.com/dontbailey/OpenShiftDay2
 
 nav:
-  - Day 2 Tasks for OpenShift
-      - OpenShift_day2.md
+  - OpenShift_day2.md
 theme:
   name: material
   logo: assets/images/favicon.png
