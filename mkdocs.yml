@@ -9,32 +9,32 @@ repo_name: dontbailey/OpenShiftDay2
 repo_url: https://github.com/dontbailey/OpenShiftDay2
 
 nav:
-  - Index:
-      - index.md
-  - OpenShift_day2.md
+    - Index:
+          - index.md
+    - OpenShift_day2.md
 theme:
-  name: material
-  logo: assets/images/favicon.png
-  palette:
-    - scheme: slate
-  features:
-    - navigation.indexes
+    name: material
+    logo: assets/images/favicon.png
+    palette:
+        - scheme: slate
+    features:
+        - navigation.indexes
 plugins:
     - d2
     - open-in-new-tab
 markdown_extensions:
-  - def_list
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
-  - pymdownx.tasklist:
-      custom_checkbox: true
+    - def_list
+    - pymdownx.superfences:
+          custom_fences:
+              - name: mermaid
+                class: mermaid
+                format: "@@@"
+    - pymdownx.highlight:
+          anchor_linenums: true
+          line_spans: __span
+          pygments_lang_class: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.superfences
+    - pymdownx.tasklist:
+          custom_checkbox: true
