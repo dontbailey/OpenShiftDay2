@@ -10,16 +10,17 @@ repo_url: https://github.com/dontbailey/OpenShiftDay2
 
 nav:
     - Home: index.md
-    - Links: OpenShift_day2.md
     - Day 1 - Management:
           - Cluster and User Management: day1-cluster-and-user-management.md
           - Adding Worker Nodes: day1-adding-worker-nodes.md
+          - Identity Provider: config-identity-provider.md
           - LDAP Configuration: day1-ldap-configuration.md
           - Roles and Role Bindings: day1-roles-and-role-bindings.md
     - Day 2 - Configuration:
-          - Identity Provider: config-identity-provider.md
+          - Roles and Role Bindings: day1-roles-and-role-bindings.md
           - Image Registry: config-image-registry.md
           - Global Pull Secret: update-global-pull-secret.md
+    - References Material: OpenShift_day2.md
 theme:
     name: material
     logo: images/williams_logo.png
@@ -33,6 +34,19 @@ theme:
     features:
         - navigation.indexes
         - search
+        - content.code.copy
+        - content.tabs.link
+        - navigation.top
+        - navigation.instant
+        - navigation.tracking
+        - navigation.sections
+        - navigation.expand
+        - navigation.prune
+        - navigation.indexes
+        - navigation.footer
+        - toc.follow
+        - search.suggest
+        - search.share
 plugins:
     - open-in-new-tab
 markdown_extensions:
