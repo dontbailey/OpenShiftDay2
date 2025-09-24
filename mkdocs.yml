@@ -9,9 +9,12 @@ repo_name: dontbailey/OpenShiftDay2
 repo_url: https://github.com/dontbailey/OpenShiftDay2
 
 nav:
-    - Index:
-          - index.md
-    - OpenShift_day2.md
+    - Home: index.md
+    - OpenShift Day 2: OpenShift_day2.md
+    - Configuration:
+          - Identity Provider: config-identity-provider.md
+          - Image Registry: config-image-registry.md
+          - Global Pull Secret: update-global-pull-secret.md
 theme:
     name: material
     logo: assets/images/favicon.png
@@ -20,7 +23,6 @@ theme:
     features:
         - navigation.indexes
 plugins:
-    - d2
     - open-in-new-tab
 markdown_extensions:
     - def_list
