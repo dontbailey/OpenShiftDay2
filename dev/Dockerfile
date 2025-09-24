@@ -1,25 +1,39 @@
-FROM squidfunk/mkdocs-material
+# Stage 1: Build stage
+FROM squidfunk/mkdocs-material as builder
 
-# Install system dependencies
-RUN apk add --no-cache --update nodejs npm bash hugo curl
+# Install build dependencies
+RUN apk add --no-cache --update nodejs npm
 
-WORKDIR /site
+WORKDIR /build
 
 # Copy dependency files first for better caching
-COPY ./requirements.txt /site/
-COPY ./package*.json /site/
+COPY requirements.txt .
+COPY package*.json ./
 
-# Install Python dependencies from requirements.txt
+# Install dependencies
 RUN pip --no-cache-dir install -r requirements.txt
-
-# Install NodeJS dependencies
 RUN npm install
 
 # Copy the rest of the project files
-COPY . /site/
+COPY . .
 
-# Expose port for MkDocs server
-EXPOSE 8000
+# Build the static site
+RUN mkdocs build
 
-# Command to run MkDocs server
-CMD ["mkdocs", "serve", "-a", "0.0.0.0:8000"]
+# Stage 2: Runtime stage
+FROM nginx:alpine as runtime
+
+# Install runtime dependencies
+RUN apk add --no-cache bash curl
+
+# Copy the built static site from the builder stage
+COPY --from=builder /build/site /usr/share/nginx/html
+
+# Expose port for the web server
+EXPOSE 80
+
+# Use a simple startup script to enable customization at runtime
+COPY dev/nginx.conf /etc/nginx/conf.d/default.conf
+
+# Command to run the web server
+CMD ["nginx", "-g", "daemon off;"]

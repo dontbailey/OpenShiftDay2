@@ -1,4 +1,4 @@
-site_name: Red Hat OpenShift Day 2
+site_name: Williams Company OpenShift Day 2 Operations
 site_url: https://github.com/OpenShiftDay2
 edit_uri: ""
 site_author: Don Bailey
@@ -10,18 +10,29 @@ repo_url: https://github.com/dontbailey/OpenShiftDay2
 
 nav:
     - Home: index.md
-    - OpenShift Day 2: OpenShift_day2.md
-    - Configuration:
+    - Links: OpenShift_day2.md
+    - Day 1 - Management:
+          - Cluster and User Management: day1-cluster-and-user-management.md
+          - Adding Worker Nodes: day1-adding-worker-nodes.md
+          - LDAP Configuration: day1-ldap-configuration.md
+          - Roles and Role Bindings: day1-roles-and-role-bindings.md
+    - Day 2 - Configuration:
           - Identity Provider: config-identity-provider.md
           - Image Registry: config-image-registry.md
           - Global Pull Secret: update-global-pull-secret.md
 theme:
     name: material
-    logo: assets/images/favicon.png
+    logo: images/williams_logo.png
+    favicon: images/williams_logo.png
     palette:
-        - scheme: slate
+        - scheme: default
+          primary: 0079C1
+          accent: c2c2c5
+    font:
+        text: Helvetica Roman
     features:
         - navigation.indexes
+        - search
 plugins:
     - open-in-new-tab
 markdown_extensions:

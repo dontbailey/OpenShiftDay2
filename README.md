@@ -1,62 +1,58 @@
-![Site Build Status](https://v3.travis.ibm.com/CE-National/TechDemos.svg?token=V6dcVopze9yqKkTJxFzN&branch=main)
+# OpenShift Day 2 Operations
 
-# IBM TechDemos
+This site contains documentation for Williams Company OpenShift Day 2 Operations, covering essential tasks for maintaining and managing OpenShift clusters post-installation.
 
-This site is home of the Client Engineering Tech Demos site.
+## Topics Covered
 
-## Technologies Covered
+### OpenShift Administration
 
-### Containers
+- Identity Provider Configuration
+- Internal Image Registry Setup
+- Global Pull Secret Management
 
-- Building Images
-- Container Registries
+### Best Practices
 
-#### Cloud Orchestration
+- Node Management
+- Monitoring and Alerting
+- Authentication and Authorization
+- Cluster Scaling
 
-- Openshift
-- Kubernetes
+### Reference Materials
 
-#### IBM Cloud Paks
-
-- CloudPak for Business Automation
-- CloudPak for Data
-- CloudPak for Integration
-
-#### Watson Services
-
-- Watson Assistant
-- Watson Discovery
-
-#### CI/CD
-
-- ArgoCD
-- Tekton
-- Jenkins https://github.ibm.com/Vibe/Jenkins-CICD
+- Markdown Documentation
+- OpenShift Architecture
+- Day 2 Operations Tasks
 
 ## Running Locally
 
-1. Clone this github repo
+1. Clone this repository
 
 ```bash
-git clone https://github.ibm.com/CE-National/TechDemos
+git clone https://github.com/dontbailey/OpenShiftDay2
 ```
 
-2. Verify mkdocs and mkdocs material are installed.
+1. Install dependencies
 
 ```bash
-npm install
+pip install -r requirements.txt
 ```
 
-3. Build the site
+1. Build the site
+
+    ```bash
+    mkdocs build
+    ```
+
+4. Serve the site locally
+
+    ```bash
+    mkdocs serve
+    ```
+
+Or use the provided script:
 
 ```bash
-mkdocs build
+./dev/mkdocs.sh 8000
 ```
 
-4. Serve the Site
-
-```bash
-mkdocs serve
-```
-
-## How to Contribute
+Then open your browser and navigate to `http://localhost:8000`.
