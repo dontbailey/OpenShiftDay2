@@ -19,7 +19,8 @@ nav:
           - Roles and Role Bindings: day2/roles-and-role-bindings.md
           - Image Registry: day2/config-image-registry.md
           - Global Pull Secret: day2/update-global-pull-secret.md
-    - References Material: OpenShift_day2.md
+    - References Material: 
+           - Operating OpenShift: Operating-Openshift-Red-Hat-Developer-ebook.pdf
 theme:
     name: material
     logo: images/williams_logo.png
