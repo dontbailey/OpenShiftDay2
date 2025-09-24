@@ -124,11 +124,11 @@ It is also a best practice to delete the built-in `kubeadmin` user after configu
     ben     0e3884e4-529b-4b5f-a7e6-2e333796d03a               localusers:ben
     ```
 
-!!! Note
+!!! note
     Only users who have logged in are listed when running the `oc get users` command.
 
-!!! Note
-    In a normal environment the default admin account would be deleated. For this environment please **DO NOT** deleate this account.  These are the steps to delete the 'kubeadmin' user in a normal environment.
+!!! note
+    In a normal environment the default admin account would be deleted. For this environment please **DO NOT** delete this account. These are the steps to delete the 'kubeadmin' user in a normal environment.
 
 1. Switch back to user that has cluster-admin role. The user 'admin' is a user with cluster admin role in this example.
     
