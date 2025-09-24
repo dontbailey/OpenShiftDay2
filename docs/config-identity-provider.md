@@ -124,7 +124,7 @@ It is also a best practice to delete the built-in `kubeadmin` user after configu
     ben     0e3884e4-529b-4b5f-a7e6-2e333796d03a               localusers:ben
     ```
 
-!!! Note 
+!!! Note
     Only users who have logged in are listed when running the `oc get users` command.
 
 !!! Note
